@@ -12,13 +12,11 @@ namespace MeuControle.Modelos.Pessoas.ModeloDentista
     {
         public int CRO { get; set; }
         public Agenda Agenda { get; set; }
-        public List<Paciente> Pacientes { get; set; }
-
-        public Dentista(string nome, int idade, string cpf, int cro, Endereco endereco, Contato contato, Agenda agenda, List<Paciente> pacientes) : base(nome, idade, cpf, endereco, contato)
+       
+        public Dentista(string nome, int idade, string cpf, int cro, Endereco endereco, Contato contato, Agenda agenda) : base(nome, idade, cpf, endereco, contato)
         {
             CRO = cro;
             Agenda = agenda;
-            Pacientes = pacientes;
 
         }
     }

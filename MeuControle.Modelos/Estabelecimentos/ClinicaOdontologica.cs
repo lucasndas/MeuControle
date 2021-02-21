@@ -6,7 +6,7 @@ using System.Text;
 
 namespace MeuControle.Modelos.Estabelecimentos
 {
-    class ClinicaOdontologica : Estabelecimento
+    public class ClinicaOdontologica : Estabelecimento
     {
         public Dentista ResponsalvelTecnico { get; set; }
 
