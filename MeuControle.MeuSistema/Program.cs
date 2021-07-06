@@ -12,10 +12,10 @@ namespace MeuControle.MeuSistema
         static void Main(string[] args)
         {
 
-            Endereco endereco = new Endereco("Parque Domingos Luis", 737, "02043-081", "São Paulo", "São Paulo");
-            Contato contato = new Contato("11980450673", "amandabsouss19@gmail.com");
+            Endereco endereco = new Endereco("rua teste", 737, "99999-999", "São Paulo", "São Paulo");
+            Contato contato = new Contato("11999999999", "aaa@aaa.com");
             Agenda agenda = new Agenda();
-            Dentista dentista = new Dentista("Amanda de Sousa Novais", 25, "40280324820", 123456,endereco,contato,agenda);
+            Dentista dentista = new Dentista("Amanda teste", 25, "4444444444", 123456,endereco,contato,agenda);
 
             AcessoBanco ConnBanco = new AcessoBanco();
             ConnBanco.Dentista.InsertOne(dentista);
